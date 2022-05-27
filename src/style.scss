@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: "Karla", sans-serif;
+    background-color: #fff;
+
+}
+
+
+
+
+
+header {
+    height: 70px;
+    width: 100%;
+    background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+    text-transform: capitalize;
+    font-size: 12px;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+
+    h1 {
+        margin-left: 15px;
+
+    }
+
+    .header-image {
+        height: 100%;
+    }
+
+}
+
+main {
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.form {
+    display: grid;
+    grid-template: 40px 40px /1fr 1fr;
+    gap: 10px;
+
+}
+
+.form-input,
+.form-button {
+    text-indent: 10px;
+    font-family: "Karla", sans-serif;
+    text-transform: capitalize;
+    outline: 0;
+
+}
+
+.form-button {
+    grid-column: 1/-1;
+    color: #fff;
+    background-color: #A626D3;
+    cursor: pointer;
+    border: 0;
+
+    border-radius: 5px;
+}
+
+#meme {
+    position: relative;
+    height: 100%;
+    margin-top: 30px;
+    word-wrap: break-word;
+
+    .memeImage {
+        width: 100%;
+        border-radius: 3px;
+        height: 70vh;
+    }
+
+    .meme-text {
+        position: absolute;
+        width: 80%;
+        text-align: center;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 0 15px;
+        margin: 15PX 0;
+        font-family: Impact, sans-serif;
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 2rem;
+        letter-spacing: 2px;
+        text-shadow:
+            2px 2px 0 #000,
+            -2px -2px 0 #000,
+            2px -2px 0 #000,
+            -2px 2px 0 #000,
+            0 2px 0 #000,
+            2px 0 0 #000,
+            0 -2px 0 #000,
+            -2px 0 0 #000,
+            2px 2px 5px #000;
+
+
+    }
+
+    .bottomText {
+        bottom: 0;
+    }
+
+    .topText {
+        top: 0;
+    }
+}
+
+
+@media screen and (min-width:600px) {
+
+
+    .form,
+    #meme {
+        width: 70vw;
+        margin: auto;
+
+    }
+
+    #meme {
+        width: 70vw;
+        margin-top: 20px;
+
+        .memeImage {
+            margin: auto;
+            max-height: 70vh;
+        }
+
+    }
+}
+
+
+
+@media screen and (max-width:480px) {
+
+    header {
+
+        h1 {
+            font-size: 1rem;
+        }
+
+        .header-image {
+            width: 50px;
+        }
+
+    }
+
+    .form {
+        width: 100%;
+
+    }
+
+    .form-input,
+    .form-button {
+        width: 100%;
+
+    }
+
+
+}
