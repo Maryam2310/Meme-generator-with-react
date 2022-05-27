@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Meme-generator-with-react/static/css/main.5dda4fc7.css",
+    "main.js": "/Meme-generator-with-react/static/js/main.55cf9c69.js",
+    "index.html": "/Meme-generator-with-react/index.html",
+    "main.5dda4fc7.css.map": "/Meme-generator-with-react/static/css/main.5dda4fc7.css.map",
+    "main.55cf9c69.js.map": "/Meme-generator-with-react/static/js/main.55cf9c69.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5dda4fc7.css",
+    "static/js/main.55cf9c69.js"
+  ]
+}
